@@ -1,0 +1,603 @@
+body, button, input, select, textarea {
+    color: #306172;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Header*/
+.site-header {
+    background: url(/images/header-bg.jpg);
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.nav {
+    &>li {
+        &>a {
+            &:hover,
+            &:focus {
+                background-color: transparent !important;
+                font-weight: bolder;
+                font-size: 21px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+nav {
+    a {
+        color: #fddede;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 50px !important;
+
+        &:hover,
+        &:focus {
+            background-color: transparent !important;
+            font-weight: bolder;
+            font-size: 21px;
+            color: #fff;
+        }
+    }
+
+    .navbar-brand {
+        height: 80px;
+    }
+
+    .glyphicon-menu-hamburger {
+        color: #fff;
+        font-size: 28px;
+    }
+
+    .nav-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            max-width: 300px;
+        }
+    }
+}
+
+.sc-slider {
+    height: calc(100vh - 80px);
+
+    .carousel {
+        height: 100%;
+    }
+
+    .carousel-inner {
+        height: 100%;
+        width: 100%;
+
+        .item {
+            height: 100%;
+        }
+    }
+
+    .item {
+        height: 100%;
+    }
+
+    #item-1 {
+        background: url(/images/bn01.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    #item-2 {
+        background: url(/images/bn02.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    #item-3 {
+        background: url(/images/bn03.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .ic-anhchi {
+            width: 450px;
+        }
+    }
+}
+
+.profile {
+    background-image: url(/images/pattern-gray.jpg);
+    background-repeat: repeat;
+
+    ul {
+        list-style: none;
+    }
+
+    .groom {
+        position: relative;
+        box-sizing: border-box;
+        display: block;
+        max-width: 1710px;
+        width: 100%;
+        background: #fff;
+        padding: 0;
+        margin: 0 auto 50px;
+
+        &.reverse {
+            .prf {
+                padding: 0 480px 0 0;
+            }
+
+            .profile-text {
+                padding-right: 75px;
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .profile-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .prf {
+            position: relative;
+            z-index: 2;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+            max-width: 1070px;
+            width: 100%;
+            padding-left: 480px;
+        }
+    }
+
+    .profile-img {
+        display: inline-block;
+        vertical-align: middle;
+        width: 418px;
+        margin: 0 -5px 0 -418px;
+
+        img {
+            transform: translate3d(0px, 0px, 0px) scale(1.00059, 1.00059);
+            transform-origin: 0 0 0;
+            border: 20px solid #fff;
+            max-width: 100%;
+        }
+    }
+
+    .profile-text {
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 75px;
+
+        h2 {
+            color: #f92e2e;
+            font-size: 70px;
+            font-family: 'Rouge Script', cursive;
+            line-height: normal;
+        }
+
+        p {
+            color: #306172;
+            line-height: 32px;
+            font-size: 21px;
+            margin: 0 0 35px;
+        }
+
+        blockquote {
+            border-left: none;
+            padding-left: 70px;
+
+            &:before {
+                background-image: url(/images/arrow.png);
+                background-repeat: no-repeat;
+                bottom: 55px;
+                content: "";
+                height: 40px;
+                left: 0;
+                position: absolute;
+                width: 40px;
+            }
+
+            span {
+                position: static;
+                color: #ccc;
+                font-family: 'Libre Baskerville';
+            }
+        }
+
+        .btn-success {
+            width: 175px;
+            font-weight: 600;
+            font-family: 'Conv_LibreBaskerville-Italic';
+        }
+    }
+
+}
+
+.congratulations {
+    background: url(/images/bg-pattern-5.png) no-repeat left bottom, url(/images/bg-pattern-6.png) no-repeat right center, url(/images/pattern-gray.jpg) repeat center top;
+    padding: 180px 15px 170px;
+
+    .widget-text {
+        max-width: 582px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .reg-form-wrap {
+        background: url(/images/reg-form-bg.png) no-repeat center top / 100% 100%;
+        padding: 30px;
+
+        .rfw-box {
+            background: #fff;
+            padding: 45px 50px 30px;
+        }
+    }
+
+    .description {
+        text-align: center;
+
+        span {
+            display: block;
+            font-family: "Rouge Script", cursive;
+            font-size: 55px;
+            color: #f24c32;
+        }
+    }
+
+    input, textarea {
+        background: #f6f6f6;
+        color: #306172;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+    }
+
+    input {
+        height: 65px;
+    }
+}
+
+.love-story {
+    background: #e05353;
+    padding: 50px 15px 0;
+
+    .slider {
+        height: auto;
+    }
+
+    h2 {
+        background: url(/images/sep-disign-white.png) no-repeat center bottom;
+        font-family: 'Libre Baskerville', serif;
+        font-size: 50px;
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 35px;
+        margin: 0 0 52px;
+    }
+
+    .story-flex {
+        background: transparent !important;
+        border: 0 !important;
+        margin-bottom: 0 !important;
+
+        .flex-control-paging {
+            display: none !important;
+        }
+
+        .flex-direction-nav {
+            li {
+                position: absolute;
+                top: 50%;
+                left: -130px;
+                margin: -51px 0 0 !important;
+                width: 102px;
+                height: 102px;
+
+                a {
+                    position: static;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    text-indent: 9999px;
+                    margin: 0;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+
+            .flex-nav-next {
+                background: url(/images/nav-next.png) no-repeat 0 0;
+                left: auto;
+                right: -130px;
+            }
+
+            .flex-nav-prev {
+                background: url(/images/nav-prev.png) no-repeat 0 0;
+            }
+        }
+    }
+
+    .slides {
+        .st-content {
+            background: #fff url(/images/bg-3.png) no-repeat 0 bottom;
+            text-align: center;
+            padding: 30px 0;
+
+            .date {
+                font-family: 'Conv_LibreBaskerville-Italic';
+                font-size: 30px;
+                color: #302d4b !important;
+                text-transform: none;
+                font-weight: normal;
+                margin: 0 0 30px;
+
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    border-left: 1px solid rgba(0,0,0,.1);
+                    border-right: 1px solid rgba(0,0,0,.1);
+                    font-family: 'Libre Baskerville', serif;
+                    font-size: 50px;
+                    color: #f24c32;
+                    font-weight: 700;
+                    line-height: 44px;
+                    padding: 0 16px;
+                    margin: 0 10px;
+                }
+            }
+
+            .st-title {
+                font-family: 'Conv_LibreBaskerville-Italic';
+                font-size: 28px;
+                color: #30c6e1;
+            }
+        }
+    }
+}
+
+.event {
+    padding-bottom: 20px;
+
+    .content-item {
+        height: 650px;
+
+        &:before {
+            content: "";
+            width: 2px;
+            height: 100%;
+            background-color: #d7d7d7;
+            top: 0;
+            transform: translate(-50%, 0);
+            -webkit-transform: translate(-50%, 0);
+            -moz-transform: translate(-50%, 0);
+            -o-transform: translate(-50%, 0);
+            position: absolute;
+            left: 50%;
+            display: flex;
+        }
+    }
+
+    .event-item {
+        -webkit-transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        position: relative;
+        background-color: #eee;
+        padding: 25px;
+        margin: 20px 55px 50px;
+        height: 100%;
+
+        .event-item-content {
+            padding: 20px 5px 0;
+
+            h2 {
+                font-size: 30px;
+                color: #e05353;
+                font-weight: 900;
+                margin-bottom: 10px;
+            }
+
+            .event-txt {
+                line-height: 1.65;
+            }
+        }
+
+        .icon-top,
+        .icon-bottom {
+            width: 44px;
+            height: 54px;
+            position: absolute;
+        }
+
+        .icon-top {
+            background-image: url(/images/pink-prop-top-left.png);
+            top: -35px;
+            left: -44px;
+        }
+
+        .icon-bottom {
+            background-image: url(/images/pink-prop-bottom-right.png);
+            bottom: -35px;
+            right: -44px;
+        }
+    }
+    .event-date-wrap {
+        height: 100%;
+
+        &:before {
+            content: "";
+            left: -34px;
+            transform: translate(0, -50%);
+            -webkit-transform: translate(0, -50%);
+            -moz-transform: translate(0, -50%);
+            -o-transform: translate(0, -50%);
+            position: absolute;
+            top: 50%;
+            background-image: url(/images/story-heart-prop.png);
+            width: 71px;
+            height: 71px;
+        }
+    }
+
+    .event-date-wrap-alt {
+        &:before {
+            left: inherit;
+            right: -34px;
+        }
+    }
+
+    .event-date {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        padding: 0 60px;
+
+        .event-time {
+            max-width: 480px;
+            font-size: 30px;
+            line-height: 50px;
+            background-color: #e05353;
+            color: #ffffff;
+            padding: 10px;
+            width: 100%;
+            max-width: 480px;
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+        }
+    }
+}
+
+.wedding {
+    color: #fff;
+    background: transparent url(/images/special-event-bg.jpg) center center/auto repeat scroll;
+    padding-bottom: 50px !important;
+
+    .h2-title-sep {
+        &:before {
+            content: "";
+            background-image: url(/images/heart-leaves-line.png);
+            width: 451px;
+            max-width: 100%;
+            height: 83px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+    }
+
+    .wd-reminder {
+        -webkit-transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        border: 3px solid #ffffff;
+    }
+
+    .wd-title {
+        background-color: #e05353;
+        padding: 15px 25px;
+
+        h3 {
+            font-size: 24px;
+            line-height: 1.2;
+            font-weight: 900;
+            text-align: center;
+            margin: 0;
+            color: #fff;
+        }
+    }
+
+    .wd-content {
+        padding: 30px;
+
+        ul {
+            list-style: none;
+
+            li {
+                font-size: 18px;
+                padding: 22px 0;
+                line-height: 1.3;
+                color: #fff;
+                border-bottom: 3px solid #e05353;
+
+                span {
+                    display: inline-block;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}
+
+.btn-success {
+    transition: all 0.2s ease-in-out;
+    background: #45d2db;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
+    height: 65px;
+    font-family: 'Conv_LibreBaskerville-Italic';
+    font-size: 18px;
+    color: #fff;
+    text-shadow: none;
+    padding: 0 20px;
+    line-height: 65px;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #ff3f4d;
+    }
+}
+
+.h2-title-sep {
+    background: url(/images/sep-disign.png) no-repeat center bottom;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
+    color: #f24c32;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+    margin: 0 0 52px;
+}
+
+.section {
+    padding: 50px 15px 20px;
+}

@@ -1,0 +1,100 @@
+.relative {
+    position: relative !important;
+}
+
+.margin {
+    margin: 10px !important;
+}
+
+.padding {
+    padding: 10px !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.auto-margin {
+    margin: auto !important;
+}
+
+
+@media (min-width: 769px) {
+    .show-pc-block {
+        display: block !important;
+    }
+
+    .show-pc-inline {
+        display: inline !important;
+    }
+
+    .show-pc-inline-block {
+        display: inline-block !important;
+    }
+
+    .hidden-pc {
+        display: none !important;
+    }
+
+    .container-list {
+        width: 600px;
+    }
+
+    .aq-dialog {
+        .el-dialog {
+            min-width: 480px !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .show-sp-block {
+        display: block !important;
+    }
+
+    .show-sp-inline {
+        display: inline !important;
+    }
+
+    .show-sp-inline-block {
+        display: inline-block !important;
+    }
+
+    .hidden-sp {
+        display: none !important;
+    }
+
+    .container-list {
+        width: calc(100% - 40px);
+    }
+
+    .sp-width-100 {
+        width: 100% !important;
+    }
+
+    .sp-pull-left {
+        float: left !important;
+    }
+
+    .sp-pull-right {
+        float: right !important;
+    }
+
+    .aq-dialog {
+        .el-dialog {
+            min-width: 300px !important;
+        }
+    }
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.flex {
+    display: flex;
+}

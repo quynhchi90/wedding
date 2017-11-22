@@ -1,0 +1,166 @@
+@media only screen and (min-width: 769px) {
+    .profile {
+        ul {
+            padding: 70px 100px;
+        }
+
+        .groom {
+            &.reverse {
+                .prf {
+                    padding: 0 480px 0 0;
+                }
+
+                .profile-text {
+                    padding-right: 75px;
+                    padding-left: 5px;
+                }
+
+                .profile-img {
+                    margin: 0 -418px 0 -5px;
+                }
+            }
+        }
+
+        .profile-content {
+            .prf {
+                padding-left: 480px;
+            }
+        }
+
+        .profile-img {
+            margin: 0 -5px 0 -418px;
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .profile {
+        ul {
+            padding: 70px 20px;
+        }
+
+        .pr-left {
+            opacity: 0.4;
+        }
+
+        .profile-content {
+            .prf {
+                padding-left: 20px;
+            }
+        }
+
+        .profile-img {
+            margin: 0 5px;
+        }
+
+        .profile-text {
+            padding-left: 60px;
+            padding-right: 10px;
+        }
+
+        .groom {
+            &.reverse {
+                .prf {
+                    padding-right: 20px;
+                }
+
+                .profile-text {
+                    padding-left: 20px;
+                }
+
+                .profile-img {
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+
+    .congratulations {
+        padding: 50px 15px;
+
+        .widget-text {
+            .widget-title {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .profile {
+        ul {
+            padding: 20px;
+        }
+
+        .groom {
+            margin-bottom: 10px;
+        }
+
+        .profile-img {
+            width: 200px;
+
+            img {
+                border: 5px solid #fff;
+            }
+        }
+
+        .profile-text {
+            padding-left: 5px;
+
+            h2 {
+                font-size: 21px;
+                margin-top: 5px;
+                margin-bottom: 0PX;
+            }
+
+            p {
+                line-height: 22px;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            blockquote {
+                padding-left: 30px;
+                padding-top: 0px;
+                margin: 0;
+
+                &:before {
+                    zoom: 65%;
+                }
+            }
+
+            a {
+                &.btn-success {
+                    width: 90px;
+                    font-weight: 400;
+                    height: 30px;
+                    font-size: 12px;
+                    line-height: 30px
+                }
+            }
+        }
+    }
+
+    .congratulations {
+        padding: 25px 5px;
+
+        .widget-text {
+            .widget-title {
+                font-size: 24px;
+                margin-bottom: 25px;
+            }
+        }
+
+        .description {
+            span {
+                font-size: 40px;
+            }
+        }
+
+        .rfw-box {
+            padding: 0 20px 20px;
+        }
+    }
+}
