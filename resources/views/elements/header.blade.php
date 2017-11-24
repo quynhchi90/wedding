@@ -9,11 +9,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Home</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
                     <li class="active"><a href="#">Love Story <span class="sr-only">(current)</span></a></li>
                     <li><a href="#">Photos</a></li>
                 </ul>
@@ -25,7 +25,7 @@
             </div><!-- /.navbar-collapse -->
             <div class="nav-logo">
                 <div class="logo">
-                    <img src="/images/ac.png" class="img-responsive">
+                    <img src="/images/ac1.png" class="img-responsive">
                 </div>
             </div>
         </nav>

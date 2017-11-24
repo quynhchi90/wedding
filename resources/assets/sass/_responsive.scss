@@ -1,41 +1,200 @@
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 1199px) {
     .profile {
-        ul {
-            padding: 70px 100px;
+        .profile-content {
+            .prf {
+                padding-left: 420px;
+            }
         }
 
         .groom {
             &.reverse {
                 .prf {
-                    padding: 0 480px 0 0;
+                    padding-right: 420px;
+
+                    .profile-img {
+                        margin: 0 -300px 0 -5px;
+                    }
+
+                    .profile-text {
+                        padding: 0 30px 0 25px;
+                    }
+                }
+            }
+        }
+
+        .profile-img {
+            width: 300px;
+            margin: 0 -5px 0 -300px;
+        }
+
+        .profile-text {
+            padding: 0 25px 0 30px;
+
+            h2 {
+                font-size: 35px;
+            }
+
+            p {
+                line-height: 24px;
+                font-size: 18px;
+                margin: 0 0 10px;
+            }
+
+            .btn-success {
+                height: 50px;
+                line-height: 50px;
+            }
+        }
+    }
+
+    .love-story {
+        .container {
+            width: 777px;
+        }
+
+        .story-flex {
+            .flex-direction-nav {
+                li {
+                    width: 80px;
+                    height: 80px;
                 }
 
-                .profile-text {
-                    padding-right: 75px;
-                    padding-left: 5px;
+                .flex-nav-prev {
+                    background: url(/images/nav-prev.png) no-repeat 0 0;
+                    background-size: cover;
+                    left: -90px;
                 }
 
-                .profile-img {
-                    margin: 0 -418px 0 -5px;
+                .flex-nav-next {
+                    background: url(/images/nav-next.png) no-repeat 0 0;
+                    background-size: cover;
+                    right: -90px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-nav {
+        &>li {
+            &>a {
+                padding-right: 8px;
+                padding-left: 8px;
+            }
+        }
+    }
+
+    nav {
+        .nav-logo {
+            width: 27%;
+            left: 40%;
+        }
+    }
+
+
+    .sc-photo {
+        padding: 50px 30px 20px;
+    }
+
+    .profile {
+        ul {
+            padding: 0;
+        }
+
+        .groom {
+            &.reverse {
+                .prf {
+                    padding: 0;
+
+                    .profile-img {
+                        margin: 30px;
+                    }
                 }
             }
         }
 
         .profile-content {
+            align-items: flex-start;
+
             .prf {
-                padding-left: 480px;
+                padding: 0;
             }
         }
 
         .profile-img {
-            margin: 0 -5px 0 -418px;
+            width: 450px;
+            margin: 30px;
+        }
+    }
+
+    .event {
+        .container {
+            width: 890px;
         }
 
+        .content-item {
+            height: 680px;
+        }
+    }
 
+    .love-story {
+        padding-bottom: 80px;
+
+        .container {
+            padding: 0;
+        }
+
+        .story-flex {
+            .flex-direction-nav {
+                li {
+                    width: 60px;
+                    height: 60px;
+                    bottom: -55px;
+                    top: unset;
+                }
+
+                .flex-nav-prev {
+                    background: url(/images/nav-prev.png) no-repeat 0 0;
+                    background-size: cover;
+                    left: 36%;
+                    bottom: -10%;
+                }
+
+                .flex-nav-next {
+                    background: url(/images/nav-next.png) no-repeat 0 0;
+                    background-size: cover;
+                    bottom: -10%;
+                    right: 40%;
+                }
+            }
+        }
+    }
+
+    .wedding {
+        .wd-content {
+            padding: 0 20px 20px 0;
+        }
+    }
+
+    .congratulations {
+        padding: 55px 15px 120px;
+    }
+
+    .h2-title-sep {
+        font-size: 36px;
     }
 }
 
 @media only screen and (max-width: 768px) {
+    nav {
+        .nav-logo {
+            height: 80px;
+            left: 0;
+            width: 50%;
+        }
+    }
+
     .profile {
         ul {
             padding: 70px 20px;
@@ -56,8 +215,7 @@
         }
 
         .profile-text {
-            padding-left: 60px;
-            padding-right: 10px;
+            padding: 0 10px;
         }
 
         .groom {
@@ -67,7 +225,7 @@
                 }
 
                 .profile-text {
-                    padding-left: 20px;
+                    padding: 0 10px;
                 }
 
                 .profile-img {
@@ -86,16 +244,114 @@
             }
         }
     }
+
+    .sc-photo {
+        .tab-content {
+            .tab-pane {
+                a {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .event {
+        .event-item {
+            margin: 10px;
+        }
+
+        .content-item {
+            height: auto;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        .event-date-wrap {
+            &:before {
+                display: none;
+            }
+        }
+
+        .event-date {
+            padding: 0;
+
+            .event-time {
+                font-size: 24px;
+                line-height: 35px;
+            }
+        }
+    }
+
+    .wedding {
+        .wd-left {
+            margin-bottom: 25px;
+        }
+    }
+
+    .love-story {
+        padding-bottom: 60px;
+
+        .story-flex {
+            .flex-direction-nav {
+                li {
+                    width: 50px;
+                    height: 50px;
+                    bottom: -55px;
+                    top: unset;
+                }
+
+                .flex-nav-prev {
+                    background: url(/images/nav-prev.png) no-repeat 0 0;
+                    background-size: cover;
+                    left: 30%;
+                }
+
+                .flex-nav-next {
+                    background: url(/images/nav-next.png) no-repeat 0 0;
+                    background-size: cover;
+                    right: 30%;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 414px) {
+    .h2-title-sep {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
     .profile {
         ul {
-            padding: 20px;
+            padding: 0;
+        }
+
+        .profile-content {
+            padding-top: 20px;
         }
 
         .groom {
             margin-bottom: 10px;
+
+            &.reverse {
+                .profile-text {
+                    padding-left: 5px;
+                    padding-right: 10px;
+                }
+
+                .prf {
+                    .profile-img {
+                        margin: 0;
+                    }
+                }
+            }
         }
 
         .profile-img {
@@ -107,8 +363,6 @@
         }
 
         .profile-text {
-            padding-left: 5px;
-
             h2 {
                 font-size: 21px;
                 margin-top: 5px;
@@ -159,8 +413,59 @@
             }
         }
 
+        .reg-form-wrap {
+            .rfw-box {
+                padding: 0 20px 20px;
+            }
+        }
+    }
+
+    .wedding {
+        .wd-content {
+            padding: 10px 20px 20px;
+
+            ul {
+                padding-left: 0;
+            }
+        }
+
+        .h2-title-sep {
+            &:before {
+                height: 60px;
+                width: 330px;
+            }
+        }
+    }
+
+    .event {
+        .container {
+            padding: 0;
+            width: unset;
+        }
+
+        .event-item {
+            margin: 0;
+        }
+    }
+
+    .congratulations {
         .rfw-box {
-            padding: 0 20px 20px;
+            padding: 0 15px 30px;
+        }
+    }
+
+    .love-story {
+        .container {
+            width: unset;
+        }
+
+        .story-flex {
+            .flex-direction-nav {
+                .flex-nav-prev,
+                .flex-nav-next {
+                    bottom: -8%;
+                }
+            }
         }
     }
 }

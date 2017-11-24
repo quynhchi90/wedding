@@ -8370,6 +8370,12 @@ textarea {
   background: url(/images/header-bg.jpg);
   border-radius: 0 !important;
   margin-bottom: 0 !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 150;
+  width: 100%;
+  opacity: 0.85;
 }
 
 .nav > li > a:hover,
@@ -8407,8 +8413,8 @@ nav .glyphicon-menu-hamburger {
 nav .nav-logo {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 33%;
+  width: 30%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8482,6 +8488,10 @@ nav .nav-logo .logo {
   width: 450px;
 }
 
+.section {
+  padding: 50px 15px 20px;
+}
+
 .profile {
   background-image: url(/images/pattern-gray.jpg);
   background-repeat: repeat;
@@ -8510,6 +8520,14 @@ nav .nav-logo .logo {
 .profile .groom.reverse .profile-text {
   padding-right: 75px;
   padding-left: 5px;
+}
+
+.profile .groom.reverse .profile-img {
+  margin: 0 -418px 0 -5px;
+}
+
+.profile .groom .pr-left {
+  opacity: 0.6;
 }
 
 .profile .profile-content {
@@ -8610,6 +8628,12 @@ nav .nav-logo .logo {
   padding: 180px 15px 170px;
 }
 
+.congratulations .cbp-so-side {
+  width: unset !important;
+  float: unset !important;
+  padding: 0 !important;
+}
+
 .congratulations .widget-text {
   max-width: 582px;
   width: 100%;
@@ -8656,18 +8680,6 @@ nav .nav-logo .logo {
 
 .love-story .slider {
   height: auto;
-}
-
-.love-story h2 {
-  background: url(/images/sep-disign-white.png) no-repeat center bottom;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 50px;
-  color: #fff;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  padding-bottom: 35px;
-  margin: 0 0 52px;
 }
 
 .love-story .story-flex {
@@ -8865,6 +8877,7 @@ nav .nav-logo .logo {
   margin: 0 auto;
   text-align: center;
   display: block;
+  font-weight: bolder;
 }
 
 .wedding {
@@ -8881,6 +8894,7 @@ nav .nav-logo .logo {
   height: 83px;
   display: block;
   margin: 0 auto 20px;
+  background-size: cover;
 }
 
 .wedding .wd-reminder {
@@ -8929,6 +8943,58 @@ nav .nav-logo .logo {
   background-size: cover;
 }
 
+.sc-photo .h2-title-sep {
+  margin-bottom: 5px;
+}
+
+.sc-photo .list-photo {
+  margin: 0 30px;
+}
+
+.sc-photo .list-photo a {
+  margin: 5px;
+  display: inline-block;
+}
+
+.sc-photo .list-photo ul {
+  margin-bottom: 20px;
+}
+
+.sc-photo .list-photo ul.ul-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+
+.sc-photo .list-photo ul.ul-tab li a {
+  color: #306172;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-family: "Encode Sans";
+}
+
+.sc-photo .list-photo ul.ul-tab li a:hover {
+  color: #4ec8f3;
+  border: none;
+}
+
+.sc-photo .list-photo ul.ul-tab li.active a {
+  border: none;
+  border-bottom: 2px solid #f24c32;
+  color: #4ec8f3;
+}
+
+.sc-photo .list-photo ul.ul-tab li.active a:hover {
+  color: #4ec8f3;
+}
+
 .btn-success {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -8965,8 +9031,19 @@ nav .nav-logo .logo {
   margin: 0 0 52px;
 }
 
-.section {
-  padding: 50px 15px 20px;
+.h2-title-sep.white {
+  background: url(/images/sep-disign-white.png) no-repeat center bottom;
+  color: #fff;
+}
+
+.cbp-so-section {
+  margin-bottom: 0 !important;
+}
+
+.cbp-so-section h2 {
+  font-size: unset !important;
+  font-weight: unset !important;
+  line-height: unset !important;
 }
 
 .relative {
@@ -9067,34 +9144,168 @@ nav .nav-logo .logo {
   display: flex;
 }
 
-@media only screen and (min-width: 769px) {
-  .profile ul {
-    padding: 70px 100px;
+@media only screen and (max-width: 1199px) {
+  .profile .profile-content .prf {
+    padding-left: 420px;
   }
 
   .profile .groom.reverse .prf {
-    padding: 0 480px 0 0;
+    padding-right: 420px;
   }
 
-  .profile .groom.reverse .profile-text {
-    padding-right: 75px;
-    padding-left: 5px;
+  .profile .groom.reverse .prf .profile-img {
+    margin: 0 -300px 0 -5px;
   }
 
-  .profile .groom.reverse .profile-img {
-    margin: 0 -418px 0 -5px;
-  }
-
-  .profile .profile-content .prf {
-    padding-left: 480px;
+  .profile .groom.reverse .prf .profile-text {
+    padding: 0 30px 0 25px;
   }
 
   .profile .profile-img {
-    margin: 0 -5px 0 -418px;
+    width: 300px;
+    margin: 0 -5px 0 -300px;
+  }
+
+  .profile .profile-text {
+    padding: 0 25px 0 30px;
+  }
+
+  .profile .profile-text h2 {
+    font-size: 35px;
+  }
+
+  .profile .profile-text p {
+    line-height: 24px;
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+
+  .profile .profile-text .btn-success {
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .love-story .container {
+    width: 777px;
+  }
+
+  .love-story .story-flex .flex-direction-nav li {
+    width: 80px;
+    height: 80px;
+  }
+
+  .love-story .story-flex .flex-direction-nav .flex-nav-prev {
+    background: url(/images/nav-prev.png) no-repeat 0 0;
+    background-size: cover;
+    left: -90px;
+  }
+
+  .love-story .story-flex .flex-direction-nav .flex-nav-next {
+    background: url(/images/nav-next.png) no-repeat 0 0;
+    background-size: cover;
+    right: -90px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-nav > li > a {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  nav .nav-logo {
+    width: 27%;
+    left: 40%;
+  }
+
+  .sc-photo {
+    padding: 50px 30px 20px;
+  }
+
+  .profile ul {
+    padding: 0;
+  }
+
+  .profile .groom.reverse .prf {
+    padding: 0;
+  }
+
+  .profile .groom.reverse .prf .profile-img {
+    margin: 30px;
+  }
+
+  .profile .profile-content {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .profile .profile-content .prf {
+    padding: 0;
+  }
+
+  .profile .profile-img {
+    width: 450px;
+    margin: 30px;
+  }
+
+  .event .container {
+    width: 890px;
+  }
+
+  .event .content-item {
+    height: 680px;
+  }
+
+  .love-story {
+    padding-bottom: 80px;
+  }
+
+  .love-story .container {
+    padding: 0;
+  }
+
+  .love-story .story-flex .flex-direction-nav li {
+    width: 60px;
+    height: 60px;
+    bottom: -55px;
+    top: unset;
+  }
+
+  .love-story .story-flex .flex-direction-nav .flex-nav-prev {
+    background: url(/images/nav-prev.png) no-repeat 0 0;
+    background-size: cover;
+    left: 36%;
+    bottom: -10%;
+  }
+
+  .love-story .story-flex .flex-direction-nav .flex-nav-next {
+    background: url(/images/nav-next.png) no-repeat 0 0;
+    background-size: cover;
+    bottom: -10%;
+    right: 40%;
+  }
+
+  .wedding .wd-content {
+    padding: 0 20px 20px 0;
+  }
+
+  .congratulations {
+    padding: 55px 15px 120px;
+  }
+
+  .h2-title-sep {
+    font-size: 36px;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  nav .nav-logo {
+    height: 80px;
+    left: 0;
+    width: 50%;
+  }
+
   .profile ul {
     padding: 70px 20px;
   }
@@ -9112,8 +9323,7 @@ nav .nav-logo .logo {
   }
 
   .profile .profile-text {
-    padding-left: 60px;
-    padding-right: 10px;
+    padding: 0 10px;
   }
 
   .profile .groom.reverse .prf {
@@ -9121,7 +9331,7 @@ nav .nav-logo .logo {
   }
 
   .profile .groom.reverse .profile-text {
-    padding-left: 20px;
+    padding: 0 10px;
   }
 
   .profile .groom.reverse .profile-img {
@@ -9135,15 +9345,93 @@ nav .nav-logo .logo {
   .congratulations .widget-text .widget-title {
     font-size: 32px;
   }
+
+  .sc-photo .tab-content .tab-pane a {
+    width: 100%;
+  }
+
+  .sc-photo .tab-content .tab-pane a img {
+    width: 100%;
+  }
+
+  .event .event-item {
+    margin: 10px;
+  }
+
+  .event .content-item {
+    height: auto;
+  }
+
+  .event .content-item:before {
+    display: none;
+  }
+
+  .event .event-date-wrap:before {
+    display: none;
+  }
+
+  .event .event-date {
+    padding: 0;
+  }
+
+  .event .event-date .event-time {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .wedding .wd-left {
+    margin-bottom: 25px;
+  }
+
+  .love-story {
+    padding-bottom: 60px;
+  }
+
+  .love-story .story-flex .flex-direction-nav li {
+    width: 50px;
+    height: 50px;
+    bottom: -55px;
+    top: unset;
+  }
+
+  .love-story .story-flex .flex-direction-nav .flex-nav-prev {
+    background: url(/images/nav-prev.png) no-repeat 0 0;
+    background-size: cover;
+    left: 30%;
+  }
+
+  .love-story .story-flex .flex-direction-nav .flex-nav-next {
+    background: url(/images/nav-next.png) no-repeat 0 0;
+    background-size: cover;
+    right: 30%;
+  }
 }
 
 @media only screen and (max-width: 414px) {
+  .h2-title-sep {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
   .profile ul {
-    padding: 20px;
+    padding: 0;
+  }
+
+  .profile .profile-content {
+    padding-top: 20px;
   }
 
   .profile .groom {
     margin-bottom: 10px;
+  }
+
+  .profile .groom.reverse .profile-text {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+
+  .profile .groom.reverse .prf .profile-img {
+    margin: 0;
   }
 
   .profile .profile-img {
@@ -9152,10 +9440,6 @@ nav .nav-logo .logo {
 
   .profile .profile-img img {
     border: 5px solid #fff;
-  }
-
-  .profile .profile-text {
-    padding-left: 5px;
   }
 
   .profile .profile-text h2 {
@@ -9201,8 +9485,43 @@ nav .nav-logo .logo {
     font-size: 40px;
   }
 
-  .congratulations .rfw-box {
+  .congratulations .reg-form-wrap .rfw-box {
     padding: 0 20px 20px;
+  }
+
+  .wedding .wd-content {
+    padding: 10px 20px 20px;
+  }
+
+  .wedding .wd-content ul {
+    padding-left: 0;
+  }
+
+  .wedding .h2-title-sep:before {
+    height: 60px;
+    width: 330px;
+  }
+
+  .event .container {
+    padding: 0;
+    width: unset;
+  }
+
+  .event .event-item {
+    margin: 0;
+  }
+
+  .congratulations .rfw-box {
+    padding: 0 15px 30px;
+  }
+
+  .love-story .container {
+    width: unset;
+  }
+
+  .love-story .story-flex .flex-direction-nav .flex-nav-prev,
+  .love-story .story-flex .flex-direction-nav .flex-nav-next {
+    bottom: -8%;
   }
 }
 
